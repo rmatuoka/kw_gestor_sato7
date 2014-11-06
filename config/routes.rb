@@ -1,4 +1,23 @@
 KwGestorSato7::Application.routes.draw do
+  
+  #root :to => "user_sessions#new"
+  
+  match '/login', :to =>'user_sessions#new', :as=>'login'
+  match '/logout' => 'user_sessions#destroy', :as=>'logout'
+  
+  resource :account, :controller =>"users"
+
+  resources :roles_tests
+
+  resources :user_tests
+
+  resources :tests
+  resources :users
+  
+  resource :user_session
+  
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

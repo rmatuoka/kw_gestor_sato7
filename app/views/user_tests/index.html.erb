@@ -1,0 +1,19 @@
+<% title "User Tests" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Number</th>
+  </tr>
+  <% for user_test in @user_tests %>
+    <tr>
+      <td><%= user_test.name %></td>
+      <td><%= user_test.number %></td>
+      <td><%= link_to "Show", user_test %></td>
+      <td><%= link_to "Edit", edit_user_test_path(user_test) %></td>
+      <td><%= link_to "Destroy", user_test, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New User Test", new_user_test_path %></p>

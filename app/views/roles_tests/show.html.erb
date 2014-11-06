@@ -1,0 +1,16 @@
+<% title "Roles Test" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @roles_test.name %>
+</p>
+<p>
+  <strong>Number:</strong>
+  <%= @roles_test.number %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_roles_test_path(@roles_test) %> |
+  <%= link_to "Destroy", @roles_test, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", roles_tests_path %>
+</p>

@@ -1,0 +1,19 @@
+<% title "Roles Tests" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Number</th>
+  </tr>
+  <% for roles_test in @roles_tests %>
+    <tr>
+      <td><%= roles_test.name %></td>
+      <td><%= roles_test.number %></td>
+      <td><%= link_to "Show", roles_test %></td>
+      <td><%= link_to "Edit", edit_roles_test_path(roles_test) %></td>
+      <td><%= link_to "Destroy", roles_test, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Roles Test", new_roles_test_path %></p>

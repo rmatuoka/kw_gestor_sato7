@@ -1,0 +1,16 @@
+<% title "Test" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @test.name %>
+</p>
+<p>
+  <strong>Number:</strong>
+  <%= @test.number %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_test_path(@test) %> |
+  <%= link_to "Destroy", @test, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", tests_path %>
+</p>

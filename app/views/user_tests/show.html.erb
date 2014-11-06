@@ -1,0 +1,16 @@
+<% title "User Test" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user_test.name %>
+</p>
+<p>
+  <strong>Number:</strong>
+  <%= @user_test.number %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_user_test_path(@user_test) %> |
+  <%= link_to "Destroy", @user_test, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", user_tests_path %>
+</p>

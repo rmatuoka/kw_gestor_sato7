@@ -1,0 +1,21 @@
+2014 11 06
+problema de undefined method com os métodos do authlogic resolvido adicionando os métodos ao 
+application_controller.rb, me deparei com erro de rotas:
+  No route matches {:action=>"show", :controller=>"user_sessions"}
+  resolvido tirando do plural a palavra "resources" do routes.rb
+próximo erro:
+  undefined local variable or method `user_session_path'
+  resolvido tirando do plural o termo "user_sessions" do routes .rb
+próximo erro:
+  undefined method `error_messages'
+  comentado error_messages para dar continuidade ao projeto
+próximo erro:
+  undefined method `login' for #<UserSession: no credentials provided>
+  resolvido combinando o model user com a view user_sessions(requerer email em ambos ou em nenhum)
+próximo erro:
+  forms .haml não renderizam;
+  resolvido trocando "-form_for" por "=form_for"
+problema: 
+  logout
+  
+  
