@@ -1,4 +1,9 @@
 class RolesTestsController < ApplicationController
+  access_control do
+    allow :admin
+  end
+    
+  
   def index
     @roles_tests = RolesTest.all
   end

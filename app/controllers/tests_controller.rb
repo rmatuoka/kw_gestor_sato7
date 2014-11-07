@@ -1,5 +1,5 @@
 class TestsController < ApplicationController
-  before_filter :require_user
+
 
   def index
     @tests = Test.all

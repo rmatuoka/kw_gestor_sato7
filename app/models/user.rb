@@ -21,8 +21,8 @@ class User < ActiveRecord::Base
   
   def role
     @role
-    if self.has_role? :administrator
-      @role = :administrator
+    if self.has_role? :admin
+      @role = :admin
     elsif self.has_role? :supervisor
       @role = :supervisor
     else self.has_role? :user

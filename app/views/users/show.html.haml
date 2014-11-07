@@ -19,4 +19,7 @@
 %p
   %b Current login ip:
   = h @user.current_login_ip
+%p
+  %b Permissão:
+  = h @user.role
 = link_to 'Edit', edit_account_path

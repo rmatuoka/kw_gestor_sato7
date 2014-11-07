@@ -19,4 +19,15 @@
   %br
   = f.password_field :password_confirmation
   %br
+  %h1 Regras
+  %p
+    = f.radio_button :role, :admin
+    Administrador
+    %br
+    = f.radio_button :role, :supervisor
+    Supervisor
+    %br
+    = f.radio_button :role, :user
+    Usuário
+    %br
   = f.submit "Register"

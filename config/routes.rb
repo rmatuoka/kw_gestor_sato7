@@ -2,8 +2,9 @@ KwGestorSato7::Application.routes.draw do
   
   #root :to => "user_sessions#new"
   
-  match '/login', :to =>'user_sessions#new', :as=>'login'
-  match '/logout' => 'user_sessions#destroy', :as=>'logout'
+  match '/login' =>'user_sessions#new'
+  match '/logout' => 'user_sessions#destroy'
+  
   
   resource :account, :controller =>"users"
 
