@@ -17,5 +17,8 @@ próximo erro:
   resolvido trocando "-form_for" por "=form_for"
 problema: 
   logout
-  
+  resolvido
+problema:
+  roles não exibindo na view
+  resolvido adaptando ao controller de users  
   
