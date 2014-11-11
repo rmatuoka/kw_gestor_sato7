@@ -1,7 +1,7 @@
 
 = form_for @user_session, :url => user_session_path do |f|
 
-  %p
+  %p.content.center
     
     = f.label :email
     %br
@@ -17,4 +17,4 @@
     = f.label :remember_me
     %br
     %br
-  = f.submit "Login"
+    = f.submit "Login"
