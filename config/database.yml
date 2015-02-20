@@ -15,7 +15,7 @@ development:
   database: kw_gestor_sato7
   pool: 5
   username: root
-  password: "1326752asd"
+  password: ""
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
