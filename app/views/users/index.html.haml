@@ -1,0 +1,19 @@
+.col-md-12
+  .block-flat
+    .header
+      %h3 Usuários
+    .content 
+      =link_to "Novo", new_user_path, :class=>"btn btn-success" 
+      %table
+        %thead
+          %th Nome
+          %th Nível de Permissão
+          %th Ações
+        -for user in @users
+          %tr
+            %td= user.name
+            %td= user.role
+            %td
+              =link_to "Editar", edit_user_path(user), :class=>"btn btn-default"
+              =link_to 'Excluir',[user], :confirm => "excluir usuário :" + user.name + "?",:method=>:delete, :class=>"btn btn-danger"
+  

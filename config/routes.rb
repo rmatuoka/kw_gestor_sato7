@@ -1,16 +1,20 @@
 KwGestorSato7::Application.routes.draw do
   
-  #root :to => "user_sessions#new"
+  root :to => "tests#index"
   
   match '/login' =>'user_sessions#new'
   match '/logout' => 'user_sessions#destroy'
   
   
-  resource :account, :controller =>"users"
+  #resource :account, :controller =>"users"
 
   resources :roles_tests
 
-  resources :user_tests
+  resources (:user_tests){
+    member do
+      get "loginn"
+    end 
+  }
 
   resources :tests
   resources :users

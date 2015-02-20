@@ -1,20 +1,23 @@
-
-= form_for @user_session, :url => user_session_path do |f|
-
-  %p.content.center
-    
-    = f.label :email
+= form_for @user_session, :url => user_session_path do |f|  
+  .content
+    %h4="Login"
+    .form-group
+      .col-sm-12
+        .input-group
+          = f.label :email
+          %br
+          = f.text_field :email
     %br
-    = f.text_field :email
+    .form-group
+      .col-sm-12
+        .input-group
+          = f.label :password
+          %br
+          = f.password_field :password
     %br
-    %br
-    = f.label :password
-    %br
-    = f.password_field :password
-    %br
-    %br
-    = f.check_box :remember_me
-    = f.label :remember_me
-    %br
-    %br
-    = f.submit "Login"
+    /%br
+    /= f.label :remember_me
+    /= f.check_box :remember_me
+    /%br
+  .foot
+    = f.submit "Login", :class=>"btn btn-primary"

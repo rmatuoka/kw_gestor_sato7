@@ -1,6 +1,9 @@
-%h1 Edit My Account
+.block-flat
+  .header
+    %h1 Editar Usuário
 
-= render :partial => "form"
-=link_to("Sair", logout_path())
-%br
-= link_to "My Profile", account_path
+  .content  
+    = render "form"
+    %br
+    %br 
+    = link_to "Exibir", account_path, :class=>"btn btn-primary"

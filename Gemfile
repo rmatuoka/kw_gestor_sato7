@@ -8,6 +8,8 @@ gem 'rails', '3.2.13'
 gem 'mysql2', '0.3.11'
 gem "nifty-generators", :group => :development
 gem 'mail'
+gem 'select2-rails'
+gem 'less'
 
 gem 'tinymce-rails', '3.5.6'
 gem "authlogic"

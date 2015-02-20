@@ -1,25 +1,28 @@
-%p
-  %b Usuário:
-  = h @user.name
-%p
-  %b Login count:
-  = h @user.login_count
-%p
-  %b Last request at:
-  = h @user.last_request_at
-%p
-  %b Last login at:
-  = h @user.last_login_at
-%p
-  %b Current login at:
-  = h @user.current_login_at
-%p
-  %b Last login ip:
-  = h @user.last_login_ip
-%p
-  %b Current login ip:
-  = h @user.current_login_ip
-%p
-  %b Permissão:
-  = h @user.role
-= link_to 'Edit', edit_account_path
+.block-flat
+  .content
+    .form-group
+      %b Usuário:
+      = h @user.name
+    .form-group
+      %b Login count:
+      = h @user.login_count
+    .form-group
+      %b Last request at:
+      = h @user.last_request_at
+    .form-group
+      %b Last login at:
+      = h @user.last_login_at
+    .form-group
+      %b Current login at:
+      = h @user.current_login_at
+    .form-group
+      %b Last login ip:
+      = h @user.last_login_ip
+    .form-group
+      %b Current login ip:
+      = h @user.current_login_ip
+    .form-group
+      %b Permissão:
+      = h @user.role
+  = link_to 'Editar', edit_user_path, :class=>"btn btn-default"
+  =link_to 'Exibir Todos', users_path(), :class=>"btn btn-default"

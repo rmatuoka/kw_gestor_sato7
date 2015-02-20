@@ -1,0 +1,33 @@
+%body.texture
+  #cl-wrapper.login-container
+    .middle-login
+      .block-flat
+        .header
+          %h3.text-center
+            %img.logo-img{:alt => "logo", :src => "images/logo.png"}>/
+            Clean Zone
+        %div
+          %form.form-horizontal{:action => "index.html", :style => "margin-bottom: 0px !important;"}
+            .content
+              %h4.title Login Access
+              .form-group
+                .col-sm-12
+                  .input-group
+                    %span.input-group-addon
+                      %i.fa.fa-user
+                    %input#username.form-control{:placeholder => "Username", :type => "text"}/
+              .form-group
+                .col-sm-12
+                  .input-group
+                    %span.input-group-addon
+                      %i.fa.fa-lock
+                    %input#password.form-control{:placeholder => "Password", :type => "password"}/
+            .foot
+              %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Register
+              %button.btn.btn-primary{"data-dismiss" => "modal", :type => "submit"} Log me in
+      .text-center.out-links
+        %a{:href => "#"} © 2013 Your Company
+  %script{:src => "js/jquery.js"}
+  %script{:src => "js/behaviour/general.js", :type => "text/javascript"}
+  /
+

@@ -1,0 +1,55 @@
+- title "Tests"
+%body
+  .stats_bar
+    .butpro.butstyle
+      .sub
+        %h2 
+          script para trazer o nome da tabela
+          %span script para trazer quantidade
+      .stat
+        /quadrado branco onde estão os resumos no template.
+        .spk1
+          %canvas{:width=>"74", :height=>"15",:style=>"display:inline-block;vertical-align:top;"}
+            /inserção de mini-gráfico
+  .row.dash-cols
+    .col-md-6.col-sm-6
+      .block 
+        .header.no-border
+          %h2 caixa para gráfico mais detalhado 
+        .content.blue-chart
+          #site_statistics{:style=>"height:180px;padding:0px;position:relative;"}
+            %canvas.flot-base{:height => "180", :style => "direction: ltr; position: absolute; left: 0px; top: 0px; width: 481px; height: 180px;", :width => "481"}
+            .flot-text{:style=>"position:absolute;top:0px;left:0px;bottom:0px;right:0px;font-size:smaller;color:rgb(84,84,84);"}
+              .flot-x-axis.flot-x1-axis.xAxis.x1Axis{:syle=>"position:absolute;top:0px;left:0px;bottom:0px;right:0px;ddisplay:block;"}
+            %canvas.flot-overlay
+        .content
+          .stat-data
+            .stat-blue
+              %h2 números
+              %span descrição
+          .stat-data
+            .stat-number
+              %div
+                %h2 Num
+              %div
+                descrição
+                %br
+                %span período
+            .stat-number
+              %div
+                %h2 Num
+              %div
+                descrição
+                %br
+                %span período
+            .clear
+    .col-md-6.col-sm-6
+      .block 
+        .header.no-border
+          %h2 caixa para gráfico mais detalhado 
+        .content.red-chart
+          #site_statistics{:style=>"height:180px;padding:0px;position:relative;"}
+            //fundo azul
+            %canvas.flot-base{:height => "180", :style => "direction: ltr; position: absolute; left: 0px; top: 0px; width: 481px; height: 180px;", :width => "481"}            
+            
+                    

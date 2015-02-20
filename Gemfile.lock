@@ -49,6 +49,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    commonjs (0.2.7)
     compass (1.0.1)
       chunky_png (~> 1.2)
       compass-core (~> 1.0.1)
@@ -83,6 +84,8 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
+    less (2.6.0)
+      commonjs (~> 0.2.7)
     libv8 (3.16.14.7)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -124,7 +127,7 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
-    rake (10.3.2)
+    rake (10.4.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -140,6 +143,8 @@ GEM
     scrypt (1.2.1)
       ffi-compiler (>= 0.0.2)
       rake
+    select2-rails (3.5.9.1)
+      thor (~> 0.14)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -175,6 +180,7 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   json
+  less
   mail
   mocha
   mysql2 (= 0.3.11)
@@ -183,6 +189,7 @@ DEPENDENCIES
   rails (= 3.2.13)
   rails3-generators
   sass-rails (~> 3.2.3)
+  select2-rails
   therubyracer
   tinymce-rails (= 3.5.6)
   uglifier (>= 1.0.3)

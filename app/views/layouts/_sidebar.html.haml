@@ -1,0 +1,37 @@
+!!!
+%html{:lang => "en"}
+  %head
+    = stylesheet_link_tag "style.css"
+  %body
+    .cl-sidebar
+      .cl-toggle
+        %i.fa.fa-bars
+      .cl-navbolck
+        .menu-space.nano.nscroller.has-scrollbar{:style=>"height:512px;"}
+          .content{:style=>"right:-15px;"}
+            .side-user
+              .avatar
+                /imagem do usuário
+              .info
+                %a{:href=>"#"}
+                  =current_user.name
+                %img imagem de status
+                %span status
+                %a{:href=>"/logout"}
+                  Logout
+            %ul.cl-vnavigation
+              /%li que alterna entre .parent e .parent.open
+              /  %ul.sub-menu{:style=>"display:block;"}
+              /    %li que varia entre .active e sem classe conforme página atual
+              /      pode ter um %span.labe.llabel-primary.pullright dentro de um %a
+              %li
+                %a{:href=>"/users"}
+                  Usuários
+          .pane{:style=>"display:block;"}
+            .slider{:style=>"height:441px;top:0px;"}
+        .text-right.collapse-button{:style=>"padding: 7px 9px;"}
+          %input.form-control.search{:placeholder => "Search...", :type => "text"}
+        %button#sideber-collapse.btn.btn-default
+          %i.fa.fa-angle-left{:style=>"color:#fff;"}
+            /botão de colapse da sidebar
+           

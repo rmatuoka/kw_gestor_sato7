@@ -1,0 +1,50 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "", :name => "author"}
+    %title Sato 7
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Raleway:300,200,100", :rel => "stylesheet", :type => "text/css"}
+    = stylesheet_link_tag "bootstrap.css"
+    = stylesheet_link_tag "js/jquery.gritter/css/jquery.gritter.css"
+    = stylesheet_link_tag "js/jquery.nanoscroller/nanoscroller.css"
+    = stylesheet_link_tag "js/jquery.easypiechart/jquery.easy-pie-chart.css"
+    = stylesheet_link_tag "js/bootstrap.switch/bootstrap-switch.css"
+    = stylesheet_link_tag "js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css"
+    = stylesheet_link_tag "js/jquery.select2/select2.css"
+    = stylesheet_link_tag "js/bootstrap.slider/css/slider.css"
+    = stylesheet_link_tag "style.css"
+    
+    
+    = yield(:head)
+  %body.texture{:style => "opacity: 1; margin-left:0px;"}
+    =yield    
+        
+  %footer  
+    
+    = javascript_include_tag "js/jquery.js"
+    = javascript_include_tag "js/jquery.nanoscroller/jquery.nanoscroller.js"
+    = javascript_include_tag "js/jquery.sparkline/jquery.sparkline.min.js"
+    = javascript_include_tag "js/jquery.easypiechart/jquery.easy-pie-chart.js"
+    = javascript_include_tag "js/behaviour/general.js"
+    = javascript_include_tag "js/jquery.ui/jquery-ui.js"
+    = javascript_include_tag "js/jquery.nestable/jquery.nestable.js"
+    = javascript_include_tag "js/bootstrap.switch/bootstrap-switch.min.js"
+    = javascript_include_tag "js/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js"
+    = javascript_include_tag "js/jquery.select2/select2.min.js"
+    = javascript_include_tag "js/bootstrap.slider/js/bootstrap-slider.js"
+    = javascript_include_tag "js/jquery.gritter/js/jquery.gritter.js"
+
+
+
+
+    = javascript_include_tag "js/behaviour/voice-commands.js"
+    = javascript_include_tag "js/bootstrap/dist/js/bootstrap.min.js"
+    = javascript_include_tag "js/jquery.flot/jquery.flot.js"
+    = javascript_include_tag "js/jquery.flot/jquery.flot.pie.js"
+    = javascript_include_tag "js/jquery.flot/jquery.flot.resize.js"
+    = javascript_include_tag "js/jquery.flot/jquery.flot.labels.js"
+  = yield(:footer)
