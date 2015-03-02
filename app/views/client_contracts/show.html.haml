@@ -1,0 +1,24 @@
+- title "Client Contract"
+
+%p
+  %strong Active:
+  = @client_contract.active
+%p
+  %strong Published:
+  = @client_contract.published
+%p
+  %strong Client:
+  = @client_contract.client_id
+%p
+  %strong Nome:
+  = @client_contract.nome
+%p
+  %strong Link:
+  = @client_contract.link
+
+%p
+  = link_to "Edit", edit_client_contract_path(@client_contract)
+  |
+  = link_to "Destroy", @client_contract, :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", client_contracts_path

@@ -1,0 +1,54 @@
+- title "Client"
+
+%p
+  %strong Active:
+  = @client.active
+%p
+  %strong Published:
+  = @client.published
+%p
+  %strong Rsocial:
+  = @client.rsocial
+%p
+  %strong Nfantasia:
+  = @client.nfantasia
+%p
+  %strong Cnpj:
+  = @client.cnpj
+%p
+  %strong Endereco:
+  = @client.endereco
+%p
+  %strong Segmento:
+  = @client.segmento
+%p
+  %strong Atividade:
+  = @client.atividade
+%p
+  %strong Telefone:
+  = @client.telefone
+%p
+  %strong Celular:
+  = @client.celular
+%p
+  %strong Email:
+  = @client.email
+%p
+  %strong Site:
+  = @client.site
+%p
+  %strong Responsavelmkt:
+  = @client.responsavelmkt
+%p
+  %strong Mkttel:
+  = @client.mkttel
+%p
+  %strong Mkt:
+  = @client.mkt
+
+%p
+  = link_to "Edit", edit_client_path(@client)
+  |
+  = link_to "Destroy", @client, :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", clients_path

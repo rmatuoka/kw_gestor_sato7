@@ -1,0 +1,64 @@
+= form_for @client do |f|
+  = f.error_messages
+  %p
+    = f.label :active
+    %br
+    = f.check_box :active
+  %p
+    = f.label :published
+    %br
+    = f.check_box :published
+  %p
+    = f.label :rsocial
+    %br
+    = f.text_field :rsocial
+  %p
+    = f.label :nfantasia
+    %br
+    = f.text_field :nfantasia
+  %p
+    = f.label :cnpj
+    %br
+    = f.text_field :cnpj
+  %p
+    = f.label :endereco
+    %br
+    = f.text_field :endereco
+  %p
+    = f.label :segmento
+    %br
+    = f.text_field :segmento
+  %p
+    = f.label :atividade
+    %br
+    = f.text_field :atividade
+  %p
+    = f.label :telefone
+    %br
+    = f.text_field :telefone
+  %p
+    = f.label :celular
+    %br
+    = f.text_field :celular
+  %p
+    = f.label :email
+    %br
+    = f.text_field :email
+  %p
+    = f.label :site
+    %br
+    = f.text_field :site
+  %p
+    = f.label :responsavelmkt
+    %br
+    = f.text_field :responsavelmkt
+  %p
+    = f.label :mkttel
+    %br
+    = f.text_field :mkttel
+  %p
+    = f.label :mkt
+    %br
+    = f.text_field :mkt
+  %p
+    = f.submit

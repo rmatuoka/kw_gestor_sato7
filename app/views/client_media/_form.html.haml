@@ -1,0 +1,24 @@
+= form_for @client_media do |f|
+  = f.error_messages
+  %p
+    = f.label :active
+    %br
+    = f.check_box :active
+  %p
+    = f.label :published
+    %br
+    = f.check_box :published
+  %p
+    = f.label :client_id
+    %br
+    = f.number_field :client_id
+  %p
+    = f.label :nome
+    %br
+    = f.text_field :nome
+  %p
+    = f.label :perfilms
+    %br
+    = f.text_field :perfilms
+  %p
+    = f.submit

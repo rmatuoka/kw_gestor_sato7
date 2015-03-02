@@ -1,0 +1,19 @@
+one:
+  active: false
+  published: false
+  client_id: 1
+  nome: MyString
+  cpf: MyString
+  rg: MyString
+  endereco: MyString
+  setor: MyString
+
+two:
+  active: false
+  published: false
+  client_id: 1
+  nome: MyString
+  cpf: MyString
+  rg: MyString
+  endereco: MyString
+  setor: MyString

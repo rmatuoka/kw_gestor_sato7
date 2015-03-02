@@ -1,0 +1,24 @@
+- title "Client Media"
+
+%p
+  %strong Active:
+  = @client_media.active
+%p
+  %strong Published:
+  = @client_media.published
+%p
+  %strong Client:
+  = @client_media.client_id
+%p
+  %strong Nome:
+  = @client_media.nome
+%p
+  %strong Perfilms:
+  = @client_media.perfilms
+
+%p
+  = link_to "Edit", edit_client_media_path(@client_media)
+  |
+  = link_to "Destroy", @client_media, :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", client_media_path

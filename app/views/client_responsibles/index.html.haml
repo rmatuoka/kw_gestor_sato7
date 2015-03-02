@@ -1,0 +1,27 @@
+- title "Client Responsibles"
+
+%table
+  %tr
+    %th Active
+    %th Published
+    %th Client
+    %th Nome
+    %th Cpf
+    %th Rg
+    %th Endereco
+    %th Setor
+  - for client_responsible in @client_responsibles
+    %tr
+      %td= client_responsible.active
+      %td= client_responsible.published
+      %td= client_responsible.client_id
+      %td= client_responsible.nome
+      %td= client_responsible.cpf
+      %td= client_responsible.rg
+      %td= client_responsible.endereco
+      %td= client_responsible.setor
+      %td= link_to 'Show', client_responsible
+      %td= link_to 'Edit', edit_client_responsible_path(client_responsible)
+      %td= link_to 'Destroy', client_responsible, :confirm => 'Are you sure?', :method => :delete
+
+%p= link_to "New Client Responsible", new_client_responsible_path

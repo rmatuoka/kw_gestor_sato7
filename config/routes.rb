@@ -1,5 +1,16 @@
 KwGestorSato7::Application.routes.draw do
   
+
+
+  resources (:clients){
+    resources :client_contracts
+    resources :client_responsibles
+    resources :client_media 
+    resources :clientes_contracts
+    resources :clientes_ms
+  }
+
+ 
   root :to => "tests#index"
   
   match '/login' =>'user_sessions#new'

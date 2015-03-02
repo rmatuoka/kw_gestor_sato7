@@ -1,0 +1,21 @@
+- title "Client Media"
+
+%table
+  %tr
+    %th Active
+    %th Published
+    %th Client
+    %th Nome
+    %th Perfilms
+  - for client_media in @client_media
+    %tr
+      %td= client_media.active
+      %td= client_media.published
+      %td= client_media.client_id
+      %td= client_media.nome
+      %td= client_media.perfilms
+      %td= link_to 'Show', client_media
+      %td= link_to 'Edit', edit_client_media_path(client_media)
+      %td= link_to 'Destroy', client_media, :confirm => 'Are you sure?', :method => :delete
+
+%p= link_to "New Client Media", new_client_media_path

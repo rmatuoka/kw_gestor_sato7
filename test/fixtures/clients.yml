@@ -1,0 +1,33 @@
+one:
+  active: false
+  published: false
+  rsocial: MyString
+  nfantasia: MyString
+  cnpj: MyString
+  endereco: MyString
+  segmento: MyString
+  atividade: MyString
+  telefone: MyString
+  celular: MyString
+  email: MyString
+  site: MyString
+  responsavelmkt: MyString
+  mkttel: MyString
+  mkt: 
+
+two:
+  active: false
+  published: false
+  rsocial: MyString
+  nfantasia: MyString
+  cnpj: MyString
+  endereco: MyString
+  segmento: MyString
+  atividade: MyString
+  telefone: MyString
+  celular: MyString
+  email: MyString
+  site: MyString
+  responsavelmkt: MyString
+  mkttel: MyString
+  mkt: 

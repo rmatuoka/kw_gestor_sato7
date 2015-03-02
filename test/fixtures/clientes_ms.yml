@@ -1,0 +1,13 @@
+one:
+  active: false
+  published: false
+  cliente_id: 1
+  nome: MyString
+  perfilms: MyString
+
+two:
+  active: false
+  published: false
+  cliente_id: 1
+  nome: MyString
+  perfilms: MyString

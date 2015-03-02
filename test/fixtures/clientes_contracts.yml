@@ -1,0 +1,11 @@
+one:
+  active: false
+  published: false
+  nome: MyString
+  link: MyString
+
+two:
+  active: false
+  published: false
+  nome: MyString
+  link: MyString

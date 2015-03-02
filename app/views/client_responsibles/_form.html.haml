@@ -1,0 +1,36 @@
+= form_for @client_responsible do |f|
+  = f.error_messages
+  %p
+    = f.label :active
+    %br
+    = f.check_box :active
+  %p
+    = f.label :published
+    %br
+    = f.check_box :published
+  %p
+    = f.label :client_id
+    %br
+    = f.number_field :client_id
+  %p
+    = f.label :nome
+    %br
+    = f.text_field :nome
+  %p
+    = f.label :cpf
+    %br
+    = f.text_field :cpf
+  %p
+    = f.label :rg
+    %br
+    = f.text_field :rg
+  %p
+    = f.label :endereco
+    %br
+    = f.text_field :endereco
+  %p
+    = f.label :setor
+    %br
+    = f.text_field :setor
+  %p
+    = f.submit

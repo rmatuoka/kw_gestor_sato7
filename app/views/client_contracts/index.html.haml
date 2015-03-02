@@ -1,0 +1,21 @@
+- title "Client Contracts"
+
+%table
+  %tr
+    %th Active
+    %th Published
+    %th Client
+    %th Nome
+    %th Link
+  - for client_contract in @client_contracts
+    %tr
+      %td= client_contract.active
+      %td= client_contract.published
+      %td= client_contract.client_id
+      %td= client_contract.nome
+      %td= client_contract.link
+      %td= link_to 'Show', client_contract
+      %td= link_to 'Edit', edit_client_contract_path(client_contract)
+      %td= link_to 'Destroy', client_contract, :confirm => 'Are you sure?', :method => :delete
+
+%p= link_to "New Client Contract", new_client_contract_path

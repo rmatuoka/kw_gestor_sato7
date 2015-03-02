@@ -1,0 +1,33 @@
+- title "Client Responsible"
+
+%p
+  %strong Active:
+  = @client_responsible.active
+%p
+  %strong Published:
+  = @client_responsible.published
+%p
+  %strong Client:
+  = @client_responsible.client_id
+%p
+  %strong Nome:
+  = @client_responsible.nome
+%p
+  %strong Cpf:
+  = @client_responsible.cpf
+%p
+  %strong Rg:
+  = @client_responsible.rg
+%p
+  %strong Endereco:
+  = @client_responsible.endereco
+%p
+  %strong Setor:
+  = @client_responsible.setor
+
+%p
+  = link_to "Edit", edit_client_responsible_path(@client_responsible)
+  |
+  = link_to "Destroy", @client_responsible, :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", client_responsibles_path

@@ -1,0 +1,32 @@
+- title "Clients"
+
+.col-md-12
+  .block-flat
+    .header
+      %h2 Clientes
+    .content
+      = link_to "Novo Cliente", new_client_path, :class=>"btn btn-success" 
+      %table
+        %tr
+          %th Ativo
+          %th Razão Social
+          %th Nome Fantasia
+          %th CNPJ
+          %th Localização
+          %th Telefone
+          %th Responsavelmkt
+          %th Ações
+        - for client in @clients
+          %tr
+            %td= client.published
+            %td= client.rsocial
+            %td= client.nfantasia
+            %td= client.cnpj
+            %td= client.telefone
+            %td= client.responsavelmkt
+            %td= client.mkt
+            %td
+              = link_to 'Show', client, :class=>"btn btn-default"
+              = link_to 'Edit', edit_client_path(client)
+              = link_to 'Destroy', client, :confirm => 'Excluir Cliente ' + client.nfantasia + '?', :method => :delete, :class=>"btn btn-danger"
+

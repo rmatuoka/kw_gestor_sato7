@@ -25,8 +25,18 @@ class User < ActiveRecord::Base
       @role = :admin
     elsif self.has_role? :comercial
       @role = :comercial
-    else self.has_role? :user
-      @role = :user
+    elsif self.has_role? :atendimento
+      @role = :atendimento
+    elsif self.has_role? :criacao
+      @role = :criacao
+    elsif self.has_role? :financeiro
+      @role = :financeiro
+    elsif self.has_role? :redacaoms
+      @role = :redacaoms
+    elsif self.has_role? :planejamento
+      @role = :planejamento
+    else self.has_role? :producao
+      @role = :producao
     end
   end
 
